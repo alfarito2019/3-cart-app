@@ -4,12 +4,13 @@ import { CartItem } from '../../models/cartItem';
 @Component({
   selector: 'navbar-component',
   imports: [],
-  templateUrl: './navbar-component.component.html'
+  templateUrl: './navbar-component.component.html',
 })
 export class NavbarComponentComponent {
-@Input() items:CartItem[] =[];
-@Output() openEventEmitter = new EventEmitter();
+  @Input() items: CartItem[] = [];
+  @Output() openEventEmitter = new EventEmitter();
 
-openCart():void{
-  this.openEventEmitter.emit()
-}}
+  openCart(): void {
+    this.openEventEmitter.emit();
+  }
+}
